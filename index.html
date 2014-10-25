@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Epilepsy Visualisation Tool</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="A visualisation of a patient's epileptic history.">
+	<meta name="author" content="Esther Lim, Aleks Bulovic, Miguel Sanchez, Vincent Guerandel">
+	<!-- STYLESHEETS --><!--[if lt IE 9]><script src="js/flot/excanvas.min.js"></script><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+	<link rel="stylesheet" type="text/css" href="css/cloud-admin.css" >
+	<link rel="stylesheet" type="text/css"  href="css/themes/graphite.css" id="skin-switcher" >
+	<link rel="stylesheet" type="text/css"  href="css/responsive.css" >
+	
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- DATE RANGE PICKER -->
+	<link rel="stylesheet" type="text/css" href="js/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<!-- HEADER -->
+	<header class="navbar clearfix" id="header">
+		<div class="container">
+				<div class="navbar-brand">
+					<!-- COMPANY LOGO -->
+					<a href="index.aspx">
+						<img src="img/logo/logo.png" alt="Epilepsy Visualisation Tool Logo" <class="img-responsive" height="50" width="200"> 
+					</a>
+					<!-- /COMPANY LOGO -->
+				</div>
+		</div>
+	</header>
+	<!--/HEADER -->
+
+
+	<!-- SIDEBAR MENU -->
+		<div id="sidebar" class="sidebar">
+					<div class="sidebar-menu nav-collapse">
+						<div class="divide-20"></div>
+							<ul>
+								<li class="active">
+									<a href="index.html">
+									<i class="fa fa-tachometer fa-fw"></i> <span class="menu-text">Dashboard</span>
+									<span class="selected"></span>
+									</a>					
+								</li>
+							</ul>
+					</div>
+		</div>
+
+		<div id="main-content">
+
+			<div class="container">
+				<div class="row">
+					<div id="content" class="col-lg-12">
+						<!-- PAGE HEADER-->
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="page-header">
+
+									<!-- BREADCRUMBS -->
+									<ul class="breadcrumb">
+
+									</ul>
+									<!-- /BREADCRUMBS -->
+									<div class="clearfix">
+										<h2 class="content-title pull-left">Epilepsy Visualisation Tool</h3>
+									</div>
+									<div class="description">Visualisation of a patient's epilepsy history</div>
+								</div>
+							</div>
+						</div>
+						<!-- /PAGE HEADER -->
+
+
+						<!-- INTERACTIVE CHART -->
+						<div class="row">
+							<div class="col-md-12">
+								<!-- BOX -->
+								<div class="box border blue">
+									<div class="box-title">
+										<h4><i class="fa fa-signal"></i>Interactive Chart</h4>
+										<div class="tools">
+											<a href="#box-config" data-toggle="modal" class="config">
+												<i class="fa fa-cog"></i>
+											</a>
+											<a href="javascript:;" class="reload">
+												<i class="fa fa-refresh"></i>
+											</a>
+											<a href="javascript:;" class="collapse">
+												<i class="fa fa-chevron-up"></i>
+											</a>
+											<a href="javascript:;" class="remove">
+												<i class="fa fa-times"></i>
+											</a>
+										</div>
+									</div>
+									<div class="box-body">
+										<div id="chart_2" class="chart"></div>
+									</div>
+								</div>
+								<!-- /BOX -->
+							</div>
+						</div>
+						<!-- /INTERACTIVE CHART -->
+
+						<!-- /ROW 5 -->
+						<div class="footer-tools">
+							<span class="go-top">
+								<i class="fa fa-chevron-up"></i> Top
+							</span>
+						</div>
+					</div><!-- /CONTENT-->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/PAGE -->
+	<!-- JAVASCRIPTS -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!-- JQUERY -->
+	<script src="js/flot/jquery.min.js"></script>
+	<!-- JQUERY UI-->
+	<script src="js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<script src="bootstrap-dist/js/bootstrap.min.js"></script>
+	
+		
+	<!-- DATE RANGE PICKER -->
+	<script src="js/bootstrap-daterangepicker/moment.min.js"></script>
+	
+	<script src="js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+	<!-- SLIMSCROLL -->
+	<script type="text/javascript" src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script><script type="text/javascript" src="js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
+	<!-- BLOCK UI -->
+	<script type="text/javascript" src="js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
+	<!-- FLOT CHARTS -->
+	<script src="js/flot/jquery.flot.min.js"></script>
+	<script src="js/flot/jquery.flot.time.min.js"></script>
+    <script src="js/flot/jquery.flot.selection.min.js"></script>
+	<script src="js/flot/jquery.flot.resize.min.js"></script>
+    <script src="js/flot/jquery.flot.pie.min.js"></script>
+    <script src="js/flot/jquery.flot.stack.min.js"></script>
+    <script src="js/flot/jquery.flot.crosshair.min.js"></script>
+	<!-- COOKIE -->
+	<script type="text/javascript" src="js/jQuery-Cookie/jquery.cookie.min.js"></script>
+	<!-- CUSTOM SCRIPT -->
+	<script src="js/script.js"></script>
+	<script src="js/charts.js"></script>
+	<script>
+		jQuery(document).ready(function() {		
+			App.setPage("flot_charts");  //Set current page
+			App.init(); //Initialise plugins and elements
+			Charts.initCharts();
+			Charts.initPieCharts();
+		});
+	</script>
+	<!-- /JAVASCRIPTS -->
+</body>
+</html>
