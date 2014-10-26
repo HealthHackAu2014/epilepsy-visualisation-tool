@@ -255,7 +255,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
@@ -412,7 +412,7 @@ h3,
 }
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 12px;
 }
 h5,
 .h5 {
@@ -1976,8 +1976,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #5e87b0;
-  border-color: #507aa4;
+  background-color: #70AFc4;
+  border-color: #70AFc4;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -5968,7 +5968,7 @@ body {
 body {
   background: none repeat scroll 0 0 #f4f4f4;
   border: 0 none;
-  font-family: "Oxygen", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-size: 13px;
   font-weight: 400;
   margin: 0;
@@ -5983,7 +5983,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-weight: 300;
 }
 label {
@@ -6052,7 +6052,7 @@ a:focus {
 }
 /* Buttons */
 .btn {
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Oxygen", sans-serif;
 }
 .btn-inverse {
   color: #ffffff;
@@ -6454,7 +6454,7 @@ fieldset[disabled] .btn-yellow.active {
 #content .content-title {
   color: #666666;
   display: block;
-  font-family: 'Open Sans';
+  font-family: "Oxygen", sans-serif;
   font-size: 50px;
   font-weight: 300;
   letter-spacing: -1px;
@@ -6495,7 +6495,7 @@ fieldset[disabled] .btn-yellow.active {
   margin-top: -8px;
   padding: 10px;
   cursor: pointer;
-  min-width: 275x;
+  min-width: 275px;
   color: #fff;
   border-radius: 0 4px 4px 0;
   background-color: #a8bc7b;
@@ -6507,7 +6507,7 @@ fieldset[disabled] .btn-yellow.active {
   font-weight: normal;
 }
 .date-range .reportrange .fa-calendar {
-  text-transform: normal;
+  text-transform: none;
   color: #fff;
   margin-top: 0px;
   font-size: 14px;
@@ -6538,7 +6538,7 @@ fieldset[disabled] .btn-yellow.active {
   min-height: 30px;
 }
 .box .box-title h4 {
-  font-family: 'Open Sans';
+  font-family: 'Oxygen';
   display: inline-block;
   font-size: 18px;
   font-weight: 400;
@@ -6718,48 +6718,6 @@ fieldset[disabled] .btn-yellow.active {
   color: #f4f4f4 !important;
   opacity: 0.6 !important;
 }
-.box.border.red {
-  border: 1px solid #d43f3a;
-}
-.box.border.red > .box-title {
-  color: #FFFFFF !important;
-  background-color: #d9534f;
-  border-bottom: 1px solid #d43f3a;
-}
-.box.border.red > .box-title h4 {
-  color: #FFFFFF !important;
-}
-.box.border.red > .box-title h4 i {
-  color: #FFFFFF !important;
-}
-.box.border.red > .box-title .tools > a {
-  color: #f4f4f4 !important;
-}
-.box.border.red > .box-title .tools > a :hover {
-  color: #f4f4f4 !important;
-  opacity: 0.6 !important;
-}
-.box.border.green {
-  border: 1px solid #9db36a;
-}
-.box.border.green > .box-title {
-  color: #FFFFFF !important;
-  background-color: #a8bc7b;
-  border-bottom: 1px solid #9db36a;
-}
-.box.border.green > .box-title h4 {
-  color: #FFFFFF !important;
-}
-.box.border.green > .box-title h4 i {
-  color: #FFFFFF !important;
-}
-.box.border.green > .box-title .tools > a {
-  color: #f4f4f4 !important;
-}
-.box.border.green > .box-title .tools > a :hover {
-  color: #f4f4f4 !important;
-  opacity: 0.6 !important;
-}
 .box.border.primary {
   border: 1px solid #507aa4;
 }
@@ -6921,7 +6879,7 @@ fieldset[disabled] .btn-yellow.active {
 .box:after,
 .box:before {
   display: table;
-  color: "";
+  color: blue;
 }
 /* Misc */
 .list-group-header {
@@ -8910,25 +8868,13 @@ ul.stats li small {
   color: #ADADAD;
   font-size: 11px;
 }
-/* Quick Pie charts Dashboards */
-.quick-pie .title {
-  color: #555555;
-  display: block;
-  font-size: 11px;
-  font-weight: 400;
-  margin-top: 5px;
-  text-transform: uppercase;
-}
-.quick-pie .title:hover {
-  text-decoration: none;
-}
 /* FOOTER GOTO TOP */
 .footer-tools {
   display: inline-block;
   float: right;
 }
 .footer-tools .go-top {
-  background-color: #c1c1c1;
+  background-color: #70AFC4;
   cursor: pointer;
   display: block;
   font-size: 14px;
@@ -8947,31 +8893,7 @@ ul.stats li small {
 .footer-tools:hover {
   opacity: 0.7;
 }
-/* GALLERY */
-#filter-controls {
-  margin-bottom: 20px;
-}
-.width-100 {
-  width: 100%;
-}
-/* EMAIL LAYOUTS */
-#email-layouts li {
-  margin-bottom: 10px;
-  font-size: 14px;
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  white-space: pre-wrap;
-  /* css-3 */
-  white-space: -moz-pre-wrap;
-  /* Mozilla, since 1999 */
 
-  white-space: -pre-wrap;
-  /* Opera 4-6 */
-  white-space: -o-pre-wrap;
-  /* Opera 7 */
-  word-wrap: break-word;
-  /* Internet Explorer 5.5+ */
-
-}
 /* FONT AWESOME */
 #font-awesome a {
   text-decoration: none;
@@ -8979,19 +8901,6 @@ ul.stats li small {
   font-weight: 300;
   margin-bottom: 5px;
   color: #555555;
-}
-/* GRITTER */
-#gritter-notice-wrapper {
-  right: 1px !important;
-}
-.gritter-close {
-  left: auto !important;
-  right: 3px !important;
-}
-.gritter-title {
-  font-family: 'Open Sans';
-  font-size: 18px;
-  font-weight: 300;
 }
 /* WELL BOTTOM */
 .well.well-bottom {

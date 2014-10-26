@@ -5,7 +5,7 @@
 }
 /* Start Navbar */
 .navbar {
-  background: none repeat scroll 0 0 #70AFC4;
+  background: none repeat scroll 0 0 #70AFc4;
   border: none;
   border-radius: 0;
   margin: 0;
@@ -25,7 +25,6 @@
   width: 200px;
   top: 8px;
   left: 0px;
-  vertical-align: middle;
 }
 
 .navbar .dropdown-toggle .username {
@@ -77,7 +76,7 @@
   text-shadow: none;
   top: 100%;
   z-index: 1000;
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Oxygen", sans-serif;
 }
 .dropdown-menu .dropdown-title {
   background: none repeat scroll 0 0 #292929;
